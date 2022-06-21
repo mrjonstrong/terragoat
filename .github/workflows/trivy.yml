@@ -24,6 +24,7 @@ jobs:
           hide-progress: false
           format: 'template'
           template: '@/contrib/sarif.tpl'
+          output: 'trivy-results.sarif'
 
       - name: Upload Trivy scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v2
